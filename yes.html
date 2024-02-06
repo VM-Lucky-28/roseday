@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Yes</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+
+    <div class="card text-center  " style="width: auto; height: auto; ">
+        <div class="card-body">
+            <!-- <h5 class="card-title">Heyy...</h5> -->
+            <div class="card-text text-center " style="margin-top: 2rem;">
+                <p style="color: red;"><b>Rose</b> is the universal symbol of <b>LOVE.</b> </p>
+                <p> <b>It is considered an epitome of beauty and passion.</b></p> 
+               <b> <p> <b style="color: red;">Roses</b> have been used as metaphors by renowned authors and poets over the centuries.</p>
+                <p style="color: cadetblue;">Depending on their color, roses are said to have different meanings. </p>
+                <p>Say for instance,</p>
+                 <p><b style="color: pink;">Pink Roses</b> are a symbol of youth and femininity,</p> 
+                 <p><b style="color: rgb(194, 181, 181);">White Roses</b> symbolize purity, innocence and peace. </p>    
+                <p><b style="color: red;">Black Roses</b> are used as metaphors for death while yellow roses are associated with friendship, freedom and even jealousy.</p></b>     
+                <br>
+                <hr>
+                <hr>
+                <h3>Do You wanna see a Magic</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="likeMe" id="yes" value="yes" onchange="redirect(this)">
+                    <label class="form-check-label" for="yes">
+                        Yes
+                    </label>
+                </div>
+    </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        
+        function redirect(radioButton){
+            if(radioButton.value === 'yes'){
+                window.location.href = 'magic.html';
+        }
+    }
+        </script>
+    
+    
+    
+
+    
+</body>
+</html>

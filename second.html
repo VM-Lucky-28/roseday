@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For You Only</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card" style="width: 18rem; height: 14rem;">
+            <div class="card-body">
+                <h5 class="card-title">Heyy...</h5>
+                <div class="card-text text-center " style="margin-top: 2rem;">Do You Like <b style="color: red;">Roses ??</b>
+                    <br>
+                    <div class="form-check">
+                        <br>
+                        <input class="form-check-input" type="radio" name="likeMe" id="yes" value="yes" onchange="redirect(this)">
+                        <label class="form-check-label" for="yes">
+                            <b>Yes</b>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="likeMe" id="no" value="no" onchange="redirect(this)">
+                        <label class="form-check-label" for="no">
+                           <b>No</b>
+                        </label>
+                    </div>
+                    <br>
+                    <script>
+                        function redirect(radioButton) {
+                            if (radioButton.value === 'yes') {
+                                window.location.href = 'yes.html';
+                            } else if (radioButton.value === 'no') {
+                                window.location.href = 'no.html';
+                            }
+                        }
+                        </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

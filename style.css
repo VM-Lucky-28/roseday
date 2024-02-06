@@ -1,0 +1,103 @@
+body{
+    background-color: aqua;
+}
+
+h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color: red;
+    font-weight: bolder;
+}
+a:hover{
+    color: red;
+}
+
+
+
+.envelope {
+    width: 200px;
+    height: 100px;
+    background: #b76e79; /* rose color */
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.flap {
+    width: 100%;
+    height: 50%;
+    background: #912f40; /* darker rose color */
+    position: absolute;
+    top: 0;
+    transform-origin: bottom;
+    transform: rotateX(0deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.letter {
+    width: 90%;
+    height: 80%;
+    background: white; /* white color for the letter */
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.message {
+    color: red;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.envelope:hover .flap {
+    transform: rotateX(0);
+}
+
+.envelope:hover .letter {
+    opacity: 1;
+}
+
+.container {
+    background: url('boy_with_rose.svg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* body {
+    background-image: url("data:image/svg+xml,<svg height='210' width='400'><line x1='200' y1='70' x2='200' y2='150' style='stroke:rgb(0,0,0);stroke-width:2' /><circle cx='200' cy='50' r='20' stroke='black' stroke-width='2' fill='white' /><line x1='160' y1='100' x2='240' y2='100' style='stroke:rgb(0,0,0);stroke-width:2' /><line x1='200' y1='150' x2='170' y2='200' style='stroke:rgb(0,0,0);stroke-width:2' /><line x1='200' y1='150' x2='230' y2='200' style='stroke:rgb(0,0,0);stroke-width:2' /><path d='M240 100 q -10 -20 20 0' stroke='red' stroke-width='2' fill='red' /></svg>");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+/* Add this to your CSS */
+/* Add this to your CSS */
+#overlay {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 5s;
+    display: none;
+}
